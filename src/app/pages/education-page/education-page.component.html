@@ -1,0 +1,16 @@
+<h1 class="text-center">Educaci&oacute;n</h1>
+<div class="overflow-hidden">
+  <div class="flex">
+    <div class="flex-1 align-items-center justify-content-center text-center xl:px-8 lg:px-8 md:px-6 sm:px-3">
+      <p-card [header]="item.institution" [subheader]="item.period" *ngFor="let item of education" class="p-4">
+        <ng-template pTemplate="content">
+          <img [src]="url+item.image" [alt]="item.institution">
+        </ng-template>
+        <ng-template pTemplate="footer">
+          {{ item.extra }}
+        </ng-template>
+      </p-card>
+
+    </div>
+  </div>
+</div>
