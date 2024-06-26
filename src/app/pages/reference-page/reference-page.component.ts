@@ -20,8 +20,8 @@ export class ReferencePageComponent {
       name: 'Santiago Andrade',
       company: 'Comware S.A.',
       position: 'Ingeniero Especialista',
-      phone: 'sandrade@comware.com.ec',
-      email: '+593 98 704 5930'
+      phone: '+593 98 704 5930',
+      email: 'sandrade@comware.com.ec'
     },
     {
       name: 'Christian Albán',
