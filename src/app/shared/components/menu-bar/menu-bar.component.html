@@ -1,3 +1,17 @@
 <p-menubar [model]="items">
-  <img src="assets/logo.png" alt="perfil" class="max-w-4rem">
+  <ul class="px-1 text-center" *ngIf="temperatura">
+    <li>
+      <strong>
+        {{ temperatura.data[0].temp }}°C
+      </strong>
+    </li>
+    <li>
+      {{temperatura.data[0].city_name}}
+    </li>
+    <li>
+      <img src="assets/weatherIcon/{{temperatura.data[0].weather.icon}}.png"
+        alt="{{temperatura.data[0].weather.description}}" class="max-w-3rem">
+    </li>
+    <li style="font-size: smaller;">{{temperatura.data[0].weather.description}}</li>
+  </ul>
 </p-menubar>

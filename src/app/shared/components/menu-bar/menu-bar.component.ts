@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
+import { WheaterService } from '../../wheater.service';
 
 @Component({
   selector: 'app-menu-bar',
@@ -10,8 +11,10 @@ import { MenuItem } from 'primeng/api';
 export class MenuBarComponent implements OnInit{
 
   items: MenuItem[] | undefined;
-
-  constructor(private router: Router){}
+  temperatura?: any
+  constructor(
+    private whaterSrv: WheaterService
+  ){}
 
   ngOnInit(): void {
       this.items = [
@@ -59,5 +62,12 @@ export class MenuBarComponent implements OnInit{
           routerLink: '/contacto'
         },
       ]
+
+      this.whaterSrv.obtenerTemperatura()
+        .subscribe(
+          res => {
+            this.temperatura = res
+          }
+        )
   }
 }
