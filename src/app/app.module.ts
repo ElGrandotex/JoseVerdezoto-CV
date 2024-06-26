@@ -11,6 +11,7 @@ import { ExperiencePageComponent } from './pages/experience-page/experience-page
 import { ReferencePageComponent } from './pages/reference-page/reference-page.component';
 import { CertificatesPageComponent } from './pages/certificates-page/certificates-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
     AppRoutingModule,
     BrowserAnimationsModule,
     PrimengModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
