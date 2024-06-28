@@ -15,14 +15,14 @@ export class EducationPageComponent {
       institution: 'Unidad Educativa San Luis Gonzaga',
       degree: 'Bachillerato en Ciencias',
       period: '2012-2018',
-      extra: 'Participación en dos campamentos nacionales del grupo CEL de colegios RUEI-Ecuador',
+      extra: '',
       image: 'slg.png'
     },
     {
       institution: 'Escuela Politécnica Nacional',
-      degree: 'Ingenieria en Software',
+      degree: 'Ingenieria en Software - 7mo Semestre',
       period: '2018-Actualidad',
-      extra: '7mo Semestre',
+      extra: '',
       image: 'epn.png'
     },
   ]
