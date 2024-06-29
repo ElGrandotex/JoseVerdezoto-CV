@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class EnveloopService {
-  private apiUrl = 'https://api.enveloop.com'; // Reemplaza con la URL base de la API de Enveloop
-  private apiKey = 'test_bu0QVfX+zYxtyZ+wSvYBPt83zXnB7xGV'; // Reemplaza con tu clave de API de Enveloop
-  // private apiKey = 'live_3AJqsZ+vvUd+QNDaCq0dvt7VmA5eO6IO'; // Reemplaza con tu clave de API de Enveloop
+  private apiUrl = 'https://api.enveloop.com';
+  private apiKey = 'test_bu0QVfX+zYxtyZ+wSvYBPt83zXnB7xGV';
+  // private apiKey = 'live_3AJqsZ+vvUd+QNDaCq0dvt7VmA5eO6IO';
 
   constructor(private http: HttpClient) { }
 
@@ -22,10 +22,5 @@ export class EnveloopService {
   public sendEmail(data: any): Observable<any> {
     const url = `${this.apiUrl}/messages`;
     return this.http.post(url, data, { headers: this.getHeaders() });
-  }
-
-  public getTemplates(): Observable<any> {
-    const url = `${this.apiUrl}/templates/contact`;
-    return this.http.get(url, { headers: this.getHeaders() });
   }
 }
