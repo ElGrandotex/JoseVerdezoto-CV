@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:gh": "ng build --output-path dist --base-href ./ ",
+    "copy:dist": "copyfiles dist/browser/* ./docs -f",
+    "delete:docs": "del docs",
+    "deploy:gh": "npm run delete:docs && npm run build:gh && npm run copy:dist"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +23,7 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "copyfiles": "^2.4.1",
     "enveloop": "^0.2.2",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
