@@ -17,6 +17,12 @@ export class CertificatesPageComponent implements OnInit{
   ngOnInit(): void {
       this.certificates = [
         {
+          name: 'GitHub Foundations',
+          school: 'GitHub',
+          date: '2024-06-29',
+          img: 'GitHub'
+        },
+        {
           name: 'Visual Studio Code: Mejora tu velocidad para codificar',
           school: 'DevTalles',
           date: '2024-03-09',
