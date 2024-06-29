@@ -9,29 +9,13 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 
 const routes: Routes = [
   {
+    path: 'CV',
+    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+  },
+  {
     path: '',
-    component: PrincipalPageComponent,
+    redirectTo: 'CV',
     pathMatch: 'full'
-  },
-  {
-    path: 'educacion',
-    component: EducationPageComponent
-  },
-  {
-    path: 'experiencia',
-    component: ExperiencePageComponent
-  },
-  {
-    path: 'referencias',
-    component: ReferencePageComponent
-  },
-  {
-    path: 'certificados',
-    component: CertificatesPageComponent
-  },
-  {
-    path: 'contacto',
-    component: ContactPageComponent
   },
   {
     path: '**',
