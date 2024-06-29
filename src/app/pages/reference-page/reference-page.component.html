@@ -1,24 +1,23 @@
 <h1 class="text-center">Referencias</h1>
-<div class="overflow-hidden">
-  <div class="flex px-3">
-    <div pAnimateOnScroll enterClass="fadein" leaveClass="fadeout"
-      class="flex-1 align-items-center justify-content-center text-center xl:px-9 lg:px-9 md:px-7 sm:px-5 animation-duration-1000">
-      <p-card *ngFor="let person of references" [header]="person.name" [subheader]="person.position" class="p-4">
-        <ng-template pTemplate="content">
-          <p>
-            <i class="pi pi-briefcase"></i>
-            {{ person.company }}
-          </p>
-          <p>
-            <i class="pi pi-phone"></i>
-            {{person.phone}}
-          </p>
-          <p>
-            <i class="pi pi-envelope"></i>
-            {{person.email}}
-          </p>
-        </ng-template>
-      </p-card>
-    </div>
+<h4 class="text-center"><i class="pi pi-users" style="font-size: 2rem;"></i></h4>
+<div class="grid px-6">
+  <div class="col-12 md:col-6 lg:col-4 text-center" *ngFor="let person of references">
+
+    <p-card [header]="person.name" [subheader]="person.position" class="p-4">
+      <ng-template pTemplate="content">
+        <p>
+          <i class="pi pi-briefcase"></i>
+          {{ person.company }}
+        </p>
+        <p>
+          <i class="pi pi-phone"></i>
+          {{person.phone}}
+        </p>
+        <p>
+          <i class="pi pi-envelope"></i>
+          {{person.email}}
+        </p>
+      </ng-template>
+    </p-card>
   </div>
 </div>

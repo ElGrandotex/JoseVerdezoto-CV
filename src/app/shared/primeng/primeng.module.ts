@@ -10,22 +10,10 @@ import { TabViewModule } from 'primeng/tabview';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { CardModule } from 'primeng/card';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    RippleModule,
-    ButtonModule,
-    MenubarModule,
-    SplitterModule,
-    PanelModule,
-    FieldsetModule,
-    DividerModule,
-    TabViewModule,
-    ProgressBarModule,
-    CardModule,
-    AnimateOnScrollModule
-  ],
   exports: [
     RippleModule,
     ButtonModule,
@@ -37,7 +25,9 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
     TabViewModule,
     ProgressBarModule,
     CardModule,
-    AnimateOnScrollModule
+    AnimateOnScrollModule,
+    ScrollPanelModule,
+    DialogModule
   ]
 })
 export class PrimengModule { }
