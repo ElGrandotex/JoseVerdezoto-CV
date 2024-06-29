@@ -21,12 +21,12 @@ export class MenuBarComponent implements OnInit{
         {
           label: 'Principal',
           icon: 'pi pi-home',
-          routerLink: '/'
+          routerLink: './'
         },
         {
           label: 'Educación',
           icon: 'pi pi-graduation-cap',
-          routerLink: '/educacion'
+          routerLink: './educacion'
         },
         {
           label: 'Experiencia',
@@ -34,32 +34,32 @@ export class MenuBarComponent implements OnInit{
           items: [
             {
               label: 'Comware S.A',
-              routerLink: '/experiencia',
+              routerLink: './experiencia',
             },
             {
               label: 'HIAS',
-              routerLink: '/experiencia',
+              routerLink: './experiencia',
             },
             {
               label: 'Produbanco',
-              routerLink: '/experiencia',
+              routerLink: './experiencia',
             },
           ]
         },
         {
           label: 'Referencias',
           icon: 'pi pi-users',
-          routerLink: '/referencias'
+          routerLink: './referencias'
         },
         {
           label: 'Certificados',
           icon: 'pi pi-book',
-          routerLink: '/certificados'
+          routerLink: './certificados'
         },
         {
           label: 'Contacto',
           icon: 'pi pi-phone',
-          routerLink: '/contacto'
+          routerLink: './contacto'
         },
       ]
 
