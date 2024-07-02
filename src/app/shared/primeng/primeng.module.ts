@@ -12,6 +12,11 @@ import { CardModule } from 'primeng/card';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { DialogModule } from 'primeng/dialog';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @NgModule({
   exports: [
@@ -27,7 +32,12 @@ import { DialogModule } from 'primeng/dialog';
     CardModule,
     AnimateOnScrollModule,
     ScrollPanelModule,
-    DialogModule
+    DialogModule,
+    FloatLabelModule,
+    IconFieldModule,
+    InputIconModule,
+    InputTextModule,
+    InputTextareaModule
   ]
 })
 export class PrimengModule { }
