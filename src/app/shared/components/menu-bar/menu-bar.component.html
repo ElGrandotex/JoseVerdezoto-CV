@@ -1,17 +1,26 @@
 <p-menubar [model]="items">
-  <ul class="px-1 text-center" *ngIf="temperatura">
-    <li>
-      <strong>
-        {{ temperatura.data[0].temp }}°C
-      </strong>
-    </li>
-    <li>
-      {{temperatura.data[0].city_name}}
-    </li>
-    <li>
-      <img src="assets/weatherIcon/{{temperatura.data[0].weather.icon}}.png"
-        alt="{{temperatura.data[0].weather.description}}" class="max-w-3rem">
-    </li>
-    <li style="font-size: smaller;">{{temperatura.data[0].weather.description}}</li>
-  </ul>
+  <div class="flex align-content-center flex-wrap">
+    <div class="flex align-items-center justify-content-center">
+      <a href="assets/CV.pdf" download="CV.pdf">
+        <p-button label="Descargar CV" icon="pi pi-download" [text]="true"></p-button>
+      </a>
+
+    </div>
+    <div class="flex align-items-center justify-content-center p-2">
+      <ul class="px-1 text-center" *ngIf="temperatura">
+        <li>
+          <strong>
+            {{ temperatura.data[0].temp }}°C
+          </strong>
+        </li>
+        <li>
+          {{temperatura.data[0].city_name}}
+        </li>
+        <li>
+          <img src="assets/weatherIcon/{{temperatura.data[0].weather.icon}}.png"
+            alt="{{temperatura.data[0].weather.description}}" class="max-w-3rem">
+        </li>
+      </ul>
+    </div>
+  </div>
 </p-menubar>
