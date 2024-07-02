@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class WheaterService {
 
-  private url = 'http://api.weatherbit.io/v2.0/current?&key=65c413809f7c4a2d886d3aa6aaff90e8&city_id=3652462&lang=es'
+  private url = 'https://api.weatherbit.io/v2.0/current?&key=65c413809f7c4a2d886d3aa6aaff90e8&city_id=3652462&lang=es'
   constructor(private http: HttpClient) { }
 
   obtenerTemperatura(): Observable<any>{
