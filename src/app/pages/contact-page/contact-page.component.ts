@@ -47,7 +47,6 @@ export class ContactPageComponent{
 
     this.enveloopSrv.sendEmail(data).subscribe(
       res => {
-        console.log('Enviado', res);
       },
       error => {
         console.log('Error :c ', error);
@@ -64,6 +63,7 @@ export class ContactPageComponent{
   onSubmit(){
     this.contactForm.markAllAsTouched();
     this.sendEmail();
+    this.contactForm.reset()
   }
 
 }

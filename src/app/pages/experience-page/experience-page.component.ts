@@ -16,21 +16,21 @@ export class ExperiencePageComponent implements OnInit {
       title: 'Pasantía Desarrollador Digital',
       company: 'Produbanco',
       period: 'Ago-Nov 2023',
-      img: 'produbanco.png',
+      img: 'produbanco.webp',
       description: 'Durante mi pasantía, apliqué metodologías Scrum para optimizar los procesos. Diseñé la interfaz de usuario de un sitio web con Angular, asegurando una experiencia fluida y atractiva. Colaboré en el desarrollo de la capa BFF con C#, contribuyendo a una arquitectura robusta y segura. Gestioné la base de datos con Microsoft SQL Server para un almacenamiento y recuperación óptimos. Trabajé en el diseño MVC y utilicé Postman para probar y validar los servicios web, garantizando la calidad y confiabilidad de los sistemas.'
     },
     {
       title: 'Pasantía en Operaciones - IT',
       company: 'HIAS',
       period: 'Mar-Ago 2023',
-      img: 'hias.png',
+      img: 'hias.webp',
       description: 'Realicé mantenimiento preventivo y correctivo de equipos y programas informáticos. Colaboré en la configuración de dominios y dispositivos para nuevos colegas, facilitando su integración y productividad. Brindé soporte técnico, configurando laptops, tarjetas de entrada, cámaras de videovigilancia e impresoras, garantizando un entorno de trabajo eficiente. Contribuí al flujo de trabajo creando un software personalizado para generar documentos de mantenimiento de laptops, mejorando la trazabilidad y el registro de actividades.'
     },
     {
       title: 'Pasantía en Sistemas',
       company: 'COMWARE',
       period: 'Sept-Oct 2017',
-      img: 'comware.png',
+      img: 'comware.webp',
       description: 'Realicé mantenimiento preventivo y correctivo de equipos y programas informáticos. Brindé apoyo técnico a los usuarios internos en cuestiones relacionadas con sus equipos y dispositivos.'
     }
   ]
