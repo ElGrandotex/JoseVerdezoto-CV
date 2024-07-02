@@ -1,1 +1,58 @@
-<p>contact-page works!</p>
+<div class="fadein animation-duration-1000">
+
+  <h1 class="text-center">Contacto</h1>
+  <h4 class="text-center"><i class="pi pi-phone" style="font-size: 2rem;"></i></h4>
+
+  <div class="card flex justify-content-center">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+      <div class="flex flex-column gap-2">
+        <label for="asunto">Asunto</label>
+        <input pInputText id="asunto" formControlName="asunto" />
+        <small *ngIf="isValidField('asunto')" class="font-italic text-red-500">
+          Ingrese un asunto
+        </small>
+      </div>
+
+      <div class="flex flex-column gap-2 pt-3">
+        <label for="nombre">Nombre</label>
+        <input pInputText id="nombre" formControlName="nombre" />
+        <small *ngIf="isValidField('nombre')" class="font-italic text-red-500">
+          Ingrese su nombre
+        </small>
+      </div>
+
+      <div class="flex flex-column gap-2 pt-3">
+        <label for="numero">N&uacute;mero telef&oacute;nico</label>
+        <input pInputText id="numero" formControlName="numero" />
+        <small *ngIf="isValidField('numero')" class="font-italic text-red-500">
+          Ingrese su n&uacute;mero telef&oacute;nico
+        </small>
+      </div>
+
+      <div class="flex flex-column gap-2 pt-3">
+        <label for="email">Correo electrónico</label>
+        <input pInputText id="email" formControlName="email" />
+        <small *ngIf="isValidField('email')" class="font-italic text-red-500">
+          Ingrese un email
+        </small>
+      </div>
+
+      <div class="flex flex-column gap-2 pt-3">
+        <label for="descripcion">Descripci&oacute;n</label>
+        <!-- <input pInputText id="descripcion" formControlName="descripcion" /> -->
+        <textarea id="descripcion" rows="4" cols="30" pInputTextarea formControlName="descripcion"></textarea>
+        <small *ngIf="isValidField('descripcion')" class="font-italic text-red-500">
+          Ingrese un descripcion
+        </small>
+      </div>
+
+      <div class="flex justify-content-center pt-5">
+        <button pButton type="submit" label="Enviar" icon="pi pi-send" class="p-button-raised"></button>
+      </div>
+    </form>
+  </div>
+
+  <h1 class="text-center pt-8">Redes Sociales</h1>
+  <h4 class="text-center"><i class="pi pi-arrow-circle-down" style="font-size: 2rem;"></i></h4>
+</div>

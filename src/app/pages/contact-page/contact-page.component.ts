@@ -8,14 +8,14 @@ import { EnveloopService } from '../../shared/enveloop.service';
   templateUrl: './contact-page.component.html',
   styleUrl: './contact-page.component.css'
 })
-export class ContactPageComponent implements OnInit{
+export class ContactPageComponent{
   public templates: any[] = []
   public emailPattern: string = "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$";
   public contactForm: FormGroup = this.fb.group({
     asunto: new FormControl<string>('', [Validators.required]),
     descripcion: new FormControl<string>('', [Validators.required]),
     email: new FormControl<string>('', [Validators.required, Validators.pattern(this.emailPattern)]),
-    nombre: new FormControl<string>('', [Validators.required, Validators.minLength(6)]),
+    nombre: new FormControl<string>('', [Validators.required]),
     numero: new FormControl<string>('', [Validators.required, Validators.minLength(10)])
   })
 
@@ -24,10 +24,8 @@ export class ContactPageComponent implements OnInit{
     private enveloopSrv: EnveloopService
   ) { }
 
-  ngOnInit(): void {
-  }
-
   sendEmail() {
+    if( !this.contactForm.valid ) return
     const asunto: string = this.contactForm.controls['asunto'].value
     const descripcion: string = this.contactForm.controls['descripcion'].value
     const email: string = this.contactForm.controls['email'].value
@@ -56,6 +54,16 @@ export class ContactPageComponent implements OnInit{
 
       }
     )
+  }
+
+  isValidField(field: string){
+    const control = this.contactForm.get(field);
+    return control?.invalid && control?.touched
+  }
+
+  onSubmit(){
+    this.contactForm.markAllAsTouched();
+    this.sendEmail();
   }
 
 }

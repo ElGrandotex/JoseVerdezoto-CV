@@ -11,6 +11,7 @@ import { ReferencePageComponent } from './reference-page/reference-page.componen
 import { CertificatesPageComponent } from './certificates-page/certificates-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { PrimengModule } from '../shared/primeng/primeng.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { PrimengModule } from '../shared/primeng/primeng.module';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    PrimengModule
+    PrimengModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class PagesModule { }
