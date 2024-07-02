@@ -1,1 +1,8 @@
-<p>experience-page works!</p>
+<div *ngIf="experience" class="p-4 text-center">
+  <p-card [header]="experience.title" [subheader]="experience.period">
+    <ng-template pTemplate="header">
+      <img [alt]="experience.company" [src]="url+experience.img" class="pt-5"/>
+  </ng-template>
+  <p class="text-justify">{{experience.description}}</p>
+  </p-card>
+</div>
