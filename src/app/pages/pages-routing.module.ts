@@ -22,7 +22,7 @@ const routes: Routes = [
         component: EducationPageComponent
       },
       {
-        path: 'experiencia',
+        path: 'experiencia/:id',
         component: ExperiencePageComponent
       },
       {

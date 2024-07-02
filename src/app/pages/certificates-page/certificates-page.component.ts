@@ -17,16 +17,16 @@ export class CertificatesPageComponent implements OnInit{
   ngOnInit(): void {
       this.certificates = [
         {
+          name: 'GitHub Foundations - Certification Program',
+          school: 'GitHub',
+          date: '2024-06-29',
+          img: 'GitHub'
+        },
+        {
           name: 'Visual Studio Code: Mejora tu velocidad para codificar',
           school: 'DevTalles',
           date: '2024-03-09',
           img: 'vsc'
-        },
-        {
-          name: 'The Third International Conference on Information Systems and Software Technologies',
-          school: 'Escuela Politécnica Nacional',
-          date: '2022-11-10',
-          img: 'ICI'
         },
         {
           name: 'SCRUM Foundation Professional Certificate',
@@ -41,22 +41,28 @@ export class CertificatesPageComponent implements OnInit{
           img: 'bdd'
         },
         {
-          name: 'Networking Basics',
-          school: 'CISCO Networking Academy',
-          date: '2023-03-04',
-          img: 'networking'
-        },
-        {
           name: 'Transformación Digital',
           school: 'Instituto Europeo de Posgrado',
           date: '2023-02-09',
           img: 'TD'
         },
         {
+          name: 'Networking Basics',
+          school: 'CISCO Networking Academy',
+          date: '2023-03-04',
+          img: 'networking'
+        },
+        {
           name: 'Academic Two',
           school: 'Centro de Educación Continua',
           date: '2023-02-03',
           img: 'cec'
+        },
+        {
+          name: 'The Third International Conference on Information Systems and Software Technologies',
+          school: 'Escuela Politécnica Nacional',
+          date: '2022-11-10',
+          img: 'ICI'
         },
         {
           name: 'Microsoft Excel Básico',

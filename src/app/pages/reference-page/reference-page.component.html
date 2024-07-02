@@ -1,23 +1,26 @@
-<h1 class="text-center">Referencias</h1>
-<h4 class="text-center"><i class="pi pi-users" style="font-size: 2rem;"></i></h4>
-<div class="grid px-6">
-  <div class="col-12 md:col-6 lg:col-4 text-center" *ngFor="let person of references">
+<div class="fadein animation-duration-1000">
 
-    <p-card [header]="person.name" [subheader]="person.position" class="p-4">
-      <ng-template pTemplate="content">
-        <p>
-          <i class="pi pi-briefcase"></i>
-          {{ person.company }}
-        </p>
-        <p>
-          <i class="pi pi-phone"></i>
-          {{person.phone}}
-        </p>
-        <p>
-          <i class="pi pi-envelope"></i>
-          {{person.email}}
-        </p>
-      </ng-template>
-    </p-card>
+  <h1 class="text-center">Referencias</h1>
+  <h4 class="text-center"><i class="pi pi-users" style="font-size: 2rem;"></i></h4>
+  <div class="grid px-6">
+    <div class="col-12 md:col-6 lg:col-4 text-center" *ngFor="let person of references">
+
+      <p-card [header]="person.name" [subheader]="person.position" class="p-4">
+        <ng-template pTemplate="content">
+          <p>
+            <i class="pi pi-briefcase"></i>
+            {{ person.company }}
+          </p>
+          <p>
+            <i class="pi pi-phone"></i>
+            {{person.phone}}
+          </p>
+          <p>
+            <i class="pi pi-envelope"></i>
+            {{person.email}}
+          </p>
+        </ng-template>
+      </p-card>
+    </div>
   </div>
 </div>

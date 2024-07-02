@@ -33,16 +33,16 @@ export class MenuBarComponent implements OnInit{
           icon: 'pi pi-briefcase',
           items: [
             {
-              label: 'Comware S.A',
-              routerLink: './experiencia',
+              label: 'Produbanco',
+              routerLink: './experiencia/Produbanco',
             },
             {
               label: 'HIAS',
-              routerLink: './experiencia',
+              routerLink: './experiencia/HIAS',
             },
             {
-              label: 'Produbanco',
-              routerLink: './experiencia',
+              label: 'Comware S.A',
+              routerLink: './experiencia/Comware',
             },
           ]
         },
