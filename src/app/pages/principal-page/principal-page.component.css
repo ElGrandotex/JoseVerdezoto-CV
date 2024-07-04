@@ -1,0 +1,30 @@
+.carousel-item {
+  background-color: #1f2937; /* Fondo de los elementos */
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+.hover{
+  transition: transform 0.3s ease;
+}
+
+.hover:hover{
+  transform: scale(1.15);
+}

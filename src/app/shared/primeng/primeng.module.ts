@@ -17,6 +17,7 @@ import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   exports: [
@@ -37,7 +38,8 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
     IconFieldModule,
     InputIconModule,
     InputTextModule,
-    InputTextareaModule
+    InputTextareaModule,
+    CarouselModule
   ]
 })
 export class PrimengModule { }
