@@ -26,8 +26,7 @@
     <h1>{{certi.name}}</h1>
     <h3>{{certi.school}}</h3>
     <h5>{{certi.date}}</h5>
-    <img [src]="url+certi.img+'.webp'" [alt]="certi.name" #foto>
-    <img src="/assets/tail-spin.svg" alt="loader" class="p-5" *ngIf="!foto">
+    <img [src]="url+certi.img+'.webp'" [alt]="certi.name" class="p-2">
   </div>
 </ng-template>
 </p-dialog>
