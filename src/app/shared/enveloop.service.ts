@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class EnveloopService {
   private apiUrl = 'https://api.enveloop.com';
   // private apiKey = 'test_bu0QVfX+zYxtyZ+wSvYBPt83zXnB7xGV';
-  private apiKey = 'live_3AJqsZ+vvUd+QNDaCq0dvt7VmA5eO6IO --';
+  private apiKey = 'live_3AJqsZ+vvUd+QNDaCq0dvt7VmA5eO6IO';
 
   constructor(private http: HttpClient) { }
 
