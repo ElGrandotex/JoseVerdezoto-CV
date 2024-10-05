@@ -31,12 +31,20 @@ export class PrincipalPageComponent implements OnInit{
         name: 'Bootstrap',
       },
       {
+        img: 'spring-original.svg',
+        name: 'Spring',
+      },
+      {
         img: 'html5-original.svg',
         name: 'Html5',
       },
       {
         img: 'css3-original.svg',
         name: 'Css3',
+      },
+      {
+        img: 'postgresql-original.svg',
+        name: 'PostgreSQL',
       },
       {
         img: 'json-original.svg',
