@@ -35,6 +35,12 @@ export class CertificatesPageComponent implements OnInit{
           img: 'SCRUM'
         },
         {
+          name: 'EF SET Certificate (Inglés)',
+          school: 'EF',
+          date: '2024-10-03',
+          img: 'EF'
+        },
+        {
           name: 'Introducción a Bases de Datos',
           school: 'ESFOT',
           date: '2022-11-10',
@@ -53,16 +59,16 @@ export class CertificatesPageComponent implements OnInit{
           img: 'networking'
         },
         {
-          name: 'Academic Two',
-          school: 'Centro de Educación Continua',
-          date: '2023-02-03',
-          img: 'cec'
-        },
-        {
           name: 'The Third International Conference on Information Systems and Software Technologies',
           school: 'Escuela Politécnica Nacional',
           date: '2022-11-10',
           img: 'ICI'
+        },
+        {
+          name: 'Academic Two',
+          school: 'Centro de Educación Continua',
+          date: '2023-02-03',
+          img: 'cec'
         },
         {
           name: 'Microsoft Excel Básico',
