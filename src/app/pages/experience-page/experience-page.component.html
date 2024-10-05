@@ -2,9 +2,10 @@
   <div *ngIf="experience" class="p-4 text-center">
     <p-card [header]="experience.title" [subheader]="experience.period">
       <ng-template pTemplate="header">
-        <img [alt]="experience.company" [src]="url+experience.img" class="pt-5" />
+        <img [alt]="experience.company" [src]="url+experience.img" class="pt-5"/>
       </ng-template>
-      <p class="text-justify">{{experience.description}}</p>
+      <p *ngFor="let item of experience.description" class="text-justify pr-4 pl-4">- {{item}}</p>
     </p-card>
   </div>
 </div>
+

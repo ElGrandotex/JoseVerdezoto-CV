@@ -3,5 +3,5 @@ export interface ExperienceInterface{
   company: string,
   period: string,
   img: string,
-  description: string,
+  description: string[],
 }

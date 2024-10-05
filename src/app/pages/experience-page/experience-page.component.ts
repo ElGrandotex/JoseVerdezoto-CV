@@ -15,23 +15,29 @@ export class ExperiencePageComponent implements OnInit {
     {
       title: 'Pasantía Desarrollador Digital',
       company: 'Produbanco',
-      period: 'Ago-Nov 2023',
+      period: 'Ago-Dic 2023',
       img: 'produbanco.webp',
-      description: 'Durante mi pasantía, apliqué metodologías Scrum para optimizar los procesos. Diseñé la interfaz de usuario de un sitio web con Angular, asegurando una experiencia fluida y atractiva. Colaboré en el desarrollo de la capa BFF con C#, contribuyendo a una arquitectura robusta y segura. Gestioné la base de datos con Microsoft SQL Server para un almacenamiento y recuperación óptimos. Trabajé en el diseño MVC y utilicé Postman para probar y validar los servicios web, garantizando la calidad y confiabilidad de los sistemas.'
+      description: ['Colaboré activamente en un equipo ágil bajo la metodología Scrum, participando en sprints y reuniones diarias para asegurar el cumplimiento de los objetivos del proyecto.',
+        'Desarrollé la interfaz de usuario utilizando Angular, asegurando una experiencia fluida y responsive.',
+        'Contribuí en el desarrollo del Backend for Frontend (BFF), facilitando la integración entre el frontend y los servicios backend.',
+        'Implementé el patrón de arquitectura MVC, estructurando el código para mejorar la mantenibilidad y escalabilidad del proyecto.']
     },
     {
       title: 'Pasantía en Operaciones - IT',
       company: 'HIAS',
       period: 'Mar-Ago 2023',
       img: 'hias.webp',
-      description: 'Realicé mantenimiento preventivo y correctivo de equipos y programas informáticos. Colaboré en la configuración de dominios y dispositivos para nuevos colegas, facilitando su integración y productividad. Brindé soporte técnico, configurando laptops, tarjetas de entrada, cámaras de videovigilancia e impresoras, garantizando un entorno de trabajo eficiente. Contribuí al flujo de trabajo creando un software personalizado para generar documentos de mantenimiento de laptops, mejorando la trazabilidad y el registro de actividades.'
+      description: ['Mantenimiento preventivo y correctivo de equipos y programas informáticos.',
+        'Brindé soporte técnico a colegas, configurando laptops, tarjetas de entrada, cámaras de videovigilancia e impresoras, garantizando un entorno de trabajo eficiente.',
+        'Contribuí al flujo de trabajo al crear un software personalizado que generaba documentos de mantenimiento de laptops, mejorando la trazabilidad y el registro de actividades.']
     },
     {
       title: 'Pasantía en Sistemas',
       company: 'COMWARE',
       period: 'Sept-Oct 2017',
       img: 'comware.webp',
-      description: 'Realicé mantenimiento preventivo y correctivo de equipos y programas informáticos. Brindé apoyo técnico a los usuarios internos en cuestiones relacionadas con sus equipos y dispositivos.'
+      description: ['Mantenimiento preventivo y correctivo de equipos y programas informáticos.',
+        'Apoyo técnico a los usuarios internos en cuestiones relacionadas con sus equipos y dispositivos.']
     }
   ]
 
@@ -40,7 +46,7 @@ export class ExperiencePageComponent implements OnInit {
     private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe( params => {
+    this.activatedRoute.paramMap.subscribe(params => {
       const name = params.get('id');
       this.experience = this.experiences.find(exp => exp.company.toLowerCase() === name?.toLowerCase())
     })
