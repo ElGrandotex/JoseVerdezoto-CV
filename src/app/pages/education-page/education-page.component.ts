@@ -20,7 +20,7 @@ export class EducationPageComponent {
     },
     {
       institution: 'Escuela Politécnica Nacional',
-      degree: 'Ingenieria en Software - 7mo Semestre',
+      degree: 'Ingenieria en Software - 9no Semestre',
       period: '2018-Actualidad',
       extra: '',
       image: 'epn.webp'
