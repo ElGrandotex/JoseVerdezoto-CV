@@ -27,6 +27,22 @@ export class PrincipalPageComponent implements OnInit{
         name: 'Angular Material',
       },
       {
+        img: 'flutter-original.svg',
+        name: 'Flutter',
+      },
+      {
+        img: 'laravel-original.svg',
+        name: 'Laravel',
+      },
+      {
+        img: 'nestjs-original.svg',
+        name: 'NestJS',
+      },
+      {
+        img: 'react-original.svg',
+        name: 'React',
+      },
+      {
         img: 'bootstrap-original.svg',
         name: 'Bootstrap',
       },
@@ -47,22 +63,6 @@ export class PrincipalPageComponent implements OnInit{
         name: 'PostgreSQL',
       },
       {
-        img: 'json-original.svg',
-        name: 'Json',
-      },
-      {
-        img: 'nodejs-plain.svg',
-        name: 'Nodejs',
-      },
-      {
-        img: 'npm-original-wordmark.svg',
-        name: 'Npm',
-      },
-      {
-        img: 'rxjs-original.svg',
-        name: 'Rxjs',
-      },
-      {
         img: 'github-original.svg',
         name: 'Github',
       },
@@ -71,20 +71,8 @@ export class PrincipalPageComponent implements OnInit{
         name: 'Figma',
       },
       {
-        img: 'markdown-original.svg',
-        name: 'Markdown',
-      },
-      {
-        img: 'vercel-original-wordmark.svg',
-        name: 'Vercel',
-      },
-      {
         img: 'postman-original.svg',
         name: 'Postman',
-      },
-      {
-        img: 'vscode-original.svg',
-        name: 'Vscode',
       },
     ]
 
