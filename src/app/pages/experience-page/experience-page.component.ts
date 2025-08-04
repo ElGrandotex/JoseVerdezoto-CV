@@ -13,6 +13,16 @@ export class ExperiencePageComponent implements OnInit {
   url: string = '/assets/experience/'
   public experiences: ExperienceInterface[] = [
     {
+      title: 'Pasantía Desarrollador Jr',
+      company: 'RCB',
+      period: 'Dic 2024-Jun 2025',
+      img: 'rcb.webp',
+      description: ['Participé en el desarrollo y mantenimiento de sitios web utilizando React, consumiendo servicios REST y aplicando Bootstrap para garantizar interfaces responsivas y adaptables a distintos dispositivos.',
+        'Desarrollé aplicaciones móviles con Flutter, implementando pantallas tanto informativas como de autenticación. Utilicé la base de datos local Drift para gestionar y almacenar información de manera eficiente dentro de la app',
+        'Integré funcionalidades avanzadas como el escaneo de códigos de barras y QR, y trabajé con dispositivos de escaneo de hardware logrando la comunicación con dispositivos físicos desde aplicaciones móviles'
+      ]
+    },
+    {
       title: 'Pasantía Desarrollador Digital',
       company: 'Produbanco',
       period: 'Ago-Dic 2023',
