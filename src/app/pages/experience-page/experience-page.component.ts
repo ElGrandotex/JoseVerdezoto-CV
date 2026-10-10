@@ -9,9 +9,29 @@ import { ExperienceInterface } from '../../interfaces/experience.interface';
 })
 export class ExperiencePageComponent implements OnInit {
 
-  experience!: ExperienceInterface | undefined;
-  url: string = '/assets/experience/'
+  experiencesByCompany: ExperienceInterface[] = [];
+  url: string = '/assets/experience/';
   public experiences: ExperienceInterface[] = [
+    {
+      title: 'Desarrollador',
+      company: 'Produbanco',
+      period: 'Nov 2025 - Presente',
+      img: 'produbancoSr.webp',
+      description: ['Diseño y desarrollo de servicios financieros escalables utilizando .NET y ASP.NET Core.',
+        'Optimización de procedimientos almacenados complejos para acelerar el procesamiento transaccional crítico.',
+        'Implementación de pruebas unitarias, de integración y funcionales automatizadas bajo el enfoque BDD.',
+        'Gestión del ciclo de vida del software mediante Git, revisión de Pull Requests y despliegues en entornos de Desarrollo, Integración y QA.']
+      },
+      {
+        title: 'Desarrollador Jr',
+        company: 'RCB',
+        period: 'Ago 2025-Oct 2025',
+        img: 'rcbJr.webp',
+        description: ['Lideré el diseño técnico y la arquitectura de una plataforma de trazabilidad comercial de alcance internacional.',
+          'Construcción integral de la aplicación móvil de la compañía utilizando Flutter.',
+          'Desarrollo del panel web administrativo empleando React y componentes de Material UI.'
+        ]
+      },
     {
       title: 'Pasantía Desarrollador Jr',
       company: 'RCB',
@@ -52,13 +72,12 @@ export class ExperiencePageComponent implements OnInit {
   ]
 
   constructor(
-    private router: Router,
     private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe(params => {
       const name = params.get('id');
-      this.experience = this.experiences.find(exp => exp.company.toLowerCase() === name?.toLowerCase())
+      this.experiencesByCompany = this.experiences.filter(exp => exp.company.toLowerCase() === name?.toLowerCase());
     })
   }
 }

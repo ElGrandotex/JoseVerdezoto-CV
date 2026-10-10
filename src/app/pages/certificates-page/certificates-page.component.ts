@@ -17,6 +17,12 @@ export class CertificatesPageComponent implements OnInit{
   ngOnInit(): void {
       this.certificates = [
         {
+          name: 'Claude Academy: Claude Code 101',
+          school: 'Anthropic',
+          date: '2026-08-24',
+          img: 'claude'
+        },
+        {
           name: 'GitHub Foundations - Certification Program',
           school: 'GitHub',
           date: '2024-06-29',

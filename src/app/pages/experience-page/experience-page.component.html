@@ -1,11 +1,18 @@
 <div class="fadein animation-duration-1000">
-  <div *ngIf="experience" class="p-4 text-center">
-    <p-card [header]="experience.title" [subheader]="experience.period">
+  <div *ngIf="experiencesByCompany.length; else noExperience" class="p-4 text-center experience-list">
+    <p-card *ngFor="let experience of experiencesByCompany" [header]="experience.title" [subheader]="experience.period" class="experience-card">
       <ng-template pTemplate="header">
         <img [alt]="experience.company" [src]="url+experience.img" class="pt-5"/>
       </ng-template>
       <p *ngFor="let item of experience.description" class="text-justify pr-4 pl-4">- {{item}}</p>
     </p-card>
   </div>
+  <ng-template #noExperience>
+    <div class="p-4 text-center">
+      <p-card header="Experiencia no encontrada">
+        <p class="m-0">No hay experiencias registradas para esta empresa.</p>
+      </p-card>
+    </div>
+  </ng-template>
 </div>
 
