@@ -33,12 +33,12 @@ export class MenuBarComponent implements OnInit{
           icon: 'pi pi-briefcase',
           items: [
             {
-              label: 'RCB Trace',
-              routerLink: './experiencia/RCB',
-            },
-            {
               label: 'Produbanco',
               routerLink: './experiencia/Produbanco',
+            },
+            {
+              label: 'RCB Trace',
+              routerLink: './experiencia/RCB',
             },
             {
               label: 'HIAS',
