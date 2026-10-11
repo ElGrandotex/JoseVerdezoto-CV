@@ -32,8 +32,8 @@ export class ContactPageComponent{
     const nombre: string = this.contactForm.controls['nombre'].value
     const numero: string = this.contactForm.controls['numero'].value
     const data = {
-      "to": "jose.verdezoto01@epn.edu.ec",
-      "from": "jose.verdezoto01@epn.edu.ec",
+      "to": "verdezotojose@gmail.com",
+      "from": "verdezotojose@gmail.com",
       "subject": asunto,
       "template": "contact",
       "templateVariables": {
